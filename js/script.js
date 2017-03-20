@@ -2,10 +2,11 @@ $(function () {
    $('.search').on('click', function () {
       $('.main-menu .navbar-form').slideToggle();
    });
+   $('#elastislaide').elastislide();
 });
 $(window).load(function () {
     var carouselCaptionWidth = $('#carousel-sidebar .active img').width();
-    console.log(carouselCaptionWidth);
+    // console.log(carouselCaptionWidth);
     $('#carousel-sidebar img').each(function () {
        $(this).attr('width', carouselCaptionWidth);
     });
